@@ -21,5 +21,4 @@ def register(request):
 
 @login_required
 def profile(request):
-    messages.info(request, f'You must login first!')
     return render(request, 'users/profile.html')  # for decorator to redirect login path
