@@ -15,5 +15,5 @@ class Post(models.Model):
     def __str__(self):
         return self.title
 
-    def get_absolute_url(self):  # look here for redirecting aftwe posting a block
+    def get_absolute_url(self):  # look here for redirecting after posting a blog
         return reverse('post-detail', kwargs={'pk': self.pk})
